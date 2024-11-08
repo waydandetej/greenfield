@@ -1,0 +1,22 @@
+﻿@using CRM;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<main>
+    <div class="row">
+        @{
+            foreach (Customer p in @Model)
+            {
+
+
+                <p>@p.Id @p.FirstName @p.LastName @p.Email @p.Contact </p>
+
+
+            }
+        }
+
+    </div>
+</main>
+
